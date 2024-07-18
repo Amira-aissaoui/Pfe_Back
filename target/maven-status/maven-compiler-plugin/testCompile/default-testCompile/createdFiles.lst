@@ -1,0 +1,5 @@
+com/expo/ExpoApplicationTests.class
+com/expo/AsyncConfigurationTest.class
+com/expo/ApiKeyUpdaterTest.class
+com/expo/AppHealthCheckTest.class
+com/expo/ProjectServiceTest.class

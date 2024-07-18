@@ -1,0 +1,11 @@
+  - alert: Instance Down
+    expr: up{instance="172.18.3.207:9996"} < 1 
+    for: 5m 
+    labels:
+      severity: Critical
+      instance: 172.18.3.207:9996
+    annotations:
+      summary: my instance : microservice 2 is DOWN 
+      description: microservice is DOWN  
+
+

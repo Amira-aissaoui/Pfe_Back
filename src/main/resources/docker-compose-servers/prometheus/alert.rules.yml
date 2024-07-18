@@ -1,0 +1,14 @@
+groups:
+- name: Prometheus alerts
+  rules:
+  - alert: Instance Down
+    expr: up{instance="172.18.3.207:9998"} < 1 
+    for: 1m 
+    labels:
+      severity: Warning
+      instance: 172.18.3.207:9998
+    annotations:
+      summary: Instance is Down 
+      description: Ebike Instance 1 is Down 
+
+
